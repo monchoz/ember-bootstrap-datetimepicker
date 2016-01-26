@@ -53,7 +53,7 @@ var bsDateTimePickerComponent = Ember.Component.extend({
         if (self.forceDateOutput) {
           self.set('date', ev.date.toDate());
         } else {
-          self.set('date', ev.date);
+          self.set('date', ev.date.format('YYYY-MM-DD HH:mm:ss') + 'Z');
         }
       }
     });
