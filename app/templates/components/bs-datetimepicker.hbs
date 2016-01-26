@@ -1,0 +1,10 @@
+{{#if hasBlock}}
+  {{yield}}
+{{else}}
+  {{view textFieldClass disabled=disabled name=textFieldName}}
+{{/if}}
+{{#unless noIcon}}
+<span class="input-group-addon">
+  <span class="{{dateIcon}}"></span>
+</span>
+{{/unless}}
